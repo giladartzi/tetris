@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tetris</title>
+    <link rel="stylesheet" href="tetris.css" />
+    <script src="tetris.js"></script>
+</head>
+
+<body>
+
+<script>
+    var _t;
+    window.onload = function() {
+        _t = new Tetris('_tetHolder', '_previewHolder', '_lines', 12, 20, 20);
+    };
+</script>
+
+<div id="_tetHolder"></div>
+<div id="_previewHolder"></div>
+<div id="_dataHolder">
+    <p id="_lines" class="centered">0</p>
+    <p  class="centered">lines</p>
+    <p  class="centered" style="margin-top: 70px;">
+        <a href="#" onClick="_t.start();">start</a>
+    </p>
+    <p  class="centered">
+        <a href="#" onClick="_t.pause();">pause</a>
+    </p>
+</div>
+
+</body>
+
+</html>
